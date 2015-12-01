@@ -36,28 +36,27 @@ var showAnswer = function (puzzleId, answer) {
     $(puzzleId + " .answer").show();
 };
 
-var closeAccordionSection = function() {
-        $('.accordion .accordionTitle').removeClass('active');
-        $('.accordion .accordionContent').slideUp(300).removeClass('open');
-    };
+var closeAccordionSection = function () {
+    $('.accordion .accordionTitle').removeClass('active');
+    $('.accordion .accordionContent').slideUp(300).removeClass('open');
+};
 
 $('.accordionTitle').click(function (e) {
-        // Grab current anchor value
-        var currentAttrValue = $(this).attr('href');
+    var currentAttrValue = $(this).attr('href');
 
-        if ($(e.target).is('.active')) {
-            closeAccordionSection();
-        } else {
-            closeAccordionSection();
-            $(this).addClass('active');
-            $('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
-        }
-        e.preventDefault();
-    });
+    if ($(e.target).is('.active')) {
+        closeAccordionSection();
+    } else {
+        closeAccordionSection();
+        $(this).addClass('active');
+        $('.accordion ' + currentAttrValue).slideDown(300).addClass('open');
+    }
+    e.preventDefault();
+});
 
 $(document).ready(function () {
 
     $(".accordionSection:last-child .accordionTitle").addClass('active');
     $(".accordionSection:last-child .accordionContent").slideDown(300).addClass('open');
-    
+
 });
