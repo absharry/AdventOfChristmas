@@ -20,27 +20,30 @@
 
 <body>
     <div class="container">
-        <div>
-            <h1>Advent of Christmas</h1>
-            <div id="1">
-                <h2>Day 1</h2>
-                <div id='1-1'>
-                    <h3>Puzzle 1 - What floor is santa on?</h3>
-                    <form >
-                        <label for="1-1-file">Please input a text file</label>
-                        <input id="1-1-file" type="file">
-                        <button type="button" onclick="day1Puzzle1()">Submit</button>
-                        <p class="answer">The floor that santa is on is <span></span></p>
-                    </form>
-                </div>
-                <div id='1-2'>
-                    <h3>Puzzle 2 - When does he enter the basement?</h3>
-                    <form >
-                        <label for="1-2-file">Please input a text file</label>
-                        <input id="1-2-file" type="file">
-                        <button type="button" onclick="day1Puzzle2()">Submit</button>
-                        <p class="answer">He enters the basement at position <span></span></p>
-                    </form>
+        <h1>Advent of Christmas</h1>
+        <div class="accordion">
+            <div class="accordionSection">
+                <a class="accordionTitle" href="#1">Day 1</a>
+                
+                <div id="1" class="accordionContent">
+                    <div id='1-1'>
+                        <h3>Puzzle 1 - What floor is santa on?</h3>
+                        <form>
+                            <label for="1-1-file">Please input a text file</label>
+                            <input id="1-1-file" type="file">
+                            <button type="button" onclick="day1Puzzle1()">Submit</button>
+                            <p class="answer">The floor that santa is on is <span></span></p>
+                        </form>
+                    </div>
+                    <div id='1-2'>
+                        <h3>Puzzle 2 - When does he enter the basement?</h3>
+                        <form>
+                            <label for="1-2-file">Please input a text file</label>
+                            <input id="1-2-file" type="file">
+                            <button type="button" onclick="day1Puzzle2()">Submit</button>
+                            <p class="answer">He enters the basement at position <span></span></p>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
